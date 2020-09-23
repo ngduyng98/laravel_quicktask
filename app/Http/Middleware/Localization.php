@@ -18,16 +18,11 @@ class Localization
      */
     public function handle(Request $request, Closure $next)
     {
-        $language = Session::get('lang', config('app.locate'));
 
-        switch ($language) {
-            case config('app.language.en'):
-                $language = config('app.language.en');
-                break;
-            default:
-                $laguage = config('app.language.vi');
+        if (session()->has('lang')) {
+            $language = Session::get('lang');
+            App::setLocale($language);
         }
-        App::setLocale($language);
 
         return $next($request);
     }

@@ -7,20 +7,9 @@ use Session;
 
 class LocalizationController extends Controller
 {
-    public function changeLanguage(Request $request)
+    public function changeLanguage($language)
     {
-        $lang = $request->language;
-        $language = config('app.locale');
-
-        switch ($lang) {
-            case config('localization.en'):
-                $language = config('localization.en');
-                break;
-            default :
-                $language = config('localization.vi');
-                break;
-        }
-        Session::put('language', $language);
+        Session::put('lang', $language);
 
         return redirect()->back();
     }

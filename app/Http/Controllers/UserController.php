@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UserController extends Controller
 {
@@ -13,7 +14,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::orderby('name')->paginate(config('app.paginate.user'));
+
+        return view('page.users.list', [
+            'users' => $user
+        ]);
     }
 
     /**
@@ -23,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('page.users.create');
     }
 
     /**
@@ -34,7 +39,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = User::create($request->all());
+
+        return redirect()->route('users.index');
     }
 
     /**
@@ -56,7 +63,15 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        try {
+            $user = User::findOrFail($id);
+
+            return view('page.users.edit', [
+                'user' => $user
+            ]);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
     }
 
     /**
@@ -68,7 +83,9 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::updateOrCreate(['id' => $id], $request->all());
+
+        return redirect()->route('users.index');
     }
 
     /**
@@ -79,6 +96,13 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            $user = User::findOrFail($id);
+            $user->delete();
+
+            return redirect()->route('users.index');
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
     }
 }
