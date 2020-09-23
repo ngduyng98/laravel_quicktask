@@ -4,8 +4,10 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Session;
+use App;
 
-class LocalizationMiddleware
+class Localization
 {
     /**
      * Handle an incoming request.
@@ -19,7 +21,7 @@ class LocalizationMiddleware
         $language = Session::get('lang', config('app.locate'));
 
         switch ($language) {
-            case $english:
+            case config('app.language.en'):
                 $language = config('app.language.en');
                 break;
             default:
