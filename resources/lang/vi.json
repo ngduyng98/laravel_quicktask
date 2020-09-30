@@ -23,5 +23,6 @@
     "user.title_edit": "Sửa Thông Tin Người Dùng",
     "user.title_list": "Danh Sách Người Dùng",
     "user.updated_at": "Thời gian sửa",
-    "vietnamese": "Tiếng Việt"
+    "vietnamese": "Tiếng Việt",
+    "user.action": "Hành động"
 }

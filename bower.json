@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "popper.js": "^2.5.3",
+    "bootstrap-css": "^3.3.7"
+  }
 }

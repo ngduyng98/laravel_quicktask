@@ -23,5 +23,6 @@
     "user.title_edit": "Edit User",
     "user.title_list": "List User",
     "user.updated_at": "Updated At",
-    "vietnamese": "Vietnamese"
+    "vietnamese": "Vietnamese",
+    "user.action": "Actions"
 }

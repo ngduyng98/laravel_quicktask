@@ -1,0 +1,7 @@
+.wrap-list-post-page .title {
+    text-decoration: line-through;
+}
+.wrap-list-post-page .image {
+    width: 150px;
+    height: 150px;
+}
