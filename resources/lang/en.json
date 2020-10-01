@@ -24,5 +24,18 @@
     "user.title_list": "List User",
     "user.updated_at": "Updated At",
     "vietnamese": "Vietnamese",
-    "user.action": "Actions"
+    "post.title_create": "Create New Post",
+    "post.save" : "Save",
+    "post.title_edit": "Edit",
+    "post.id": "ID",
+    "post.create_new": "Create New",
+    "post.title_list": "Posts of",
+    "post.edit": "Edit",
+    "post.popup.comfirm_delete": "Do you want to delete this post?",
+    "post.popup.no": "Back",
+    "post.popup.title_delete": "Delete Post",
+    "post.popup.yes": "Delete",
+    "post.delete": "Delete",
+    "user.action": "Actions",
+    "post.action": "Actions"
 }

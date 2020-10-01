@@ -24,5 +24,18 @@
     "user.title_list": "Danh Sách Người Dùng",
     "user.updated_at": "Thời gian sửa",
     "vietnamese": "Tiếng Việt",
-    "user.action": "Hành động"
+    "post.title_create": "Thêm Bài Viết Mới",
+    "post.save": "Lưu",
+    "post.title_edit": "Sửa",
+    "post.id": "ID",
+    "post.create_new": "Thêm mới",
+    "post.title_list": "Danh sách bài viết của ",
+    "post.edit": "Sửa",
+    "post.popup.comfirm_delete": "Bạn muốn xóa bài viết này không?",
+    "post.popup.no": "Trở lại",
+    "post.popup.title_delete": "Xóa bài viết",
+    "post.popup.yes": "Xác nhận xóa",
+    "post.delete": "Xóa",
+    "user.action": "Hành động",
+    "post.action": "Hành động"
 }
