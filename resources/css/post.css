@@ -1,7 +1,9 @@
-.wrap-list-post-page .title {
-    text-decoration: line-through;
+.wrap-list-post-page .img-post {
+    width: 300px;
+    height: auto;
 }
-.wrap-list-post-page .image {
-    width: 150px;
-    height: 150px;
+
+.wrap-edit-post-page .img-post {
+    width: 300px;
+    height: auto;
 }
